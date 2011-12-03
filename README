@@ -2,4 +2,6 @@ This project is about Czech railway stations data.
 
 It provides Java-implemented parser from Open Document Format spreadsheets to RDF/XML files. The source files are provided as original files are published in DBF format using unusual DOS/OS2-852 encoding.
 
+See http://jdem.cz/sxdw7 for source data.
+
 Please tweet with #stationdata hashtag.
