@@ -4,4 +4,7 @@ It provides Java-implemented parser from Open Document Format spreadsheets to RD
 
 See http://jdem.cz/sxdw7 for source data.
 
+To run project just Open as a Maven project in Netbeans and run.
+Output is generate into data/output.rdf.
+
 Please tweet with #stationdata hashtag.
