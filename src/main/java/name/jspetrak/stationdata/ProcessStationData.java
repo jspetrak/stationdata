@@ -66,7 +66,7 @@ public class ProcessStationData {
         Resource ownerResource = model.createResource("http://stationdata.example.cz/owner/"+owner);
         
         model.add(stationResource, RDF.type, Rail.STATION);
-        model.add(stationResource, Rail.MANAGERBY, ownerResource);
+        model.add(stationResource, Rail.MANAGEDBY, ownerResource);
         model.add(stationResource, RDFS.label, name);
     }
 }

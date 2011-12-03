@@ -8,9 +8,9 @@ import com.hp.hpl.jena.rdf.model.Resource;
 public class Rail {
     public static final String NS = "http://ontologi.es/rail/vocab#";
     
-    private static Model model = ModelFactory.createDefaultModel();
+    private static final Model model = ModelFactory.createDefaultModel();
     
     public static final Resource STATION = model.createResource(NS + "Station");
     
-    public static final Property MANAGERBY = model.createProperty(NS, "managed_by");
+    public static final Property MANAGEDBY = model.createProperty(NS, "managed_by");
 }
