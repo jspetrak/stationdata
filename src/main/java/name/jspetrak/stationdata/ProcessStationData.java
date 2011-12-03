@@ -14,6 +14,11 @@ import org.odftoolkit.odfdom.doc.OdfSpreadsheetDocument;
 import org.odftoolkit.odfdom.doc.table.OdfTable;
 import org.odftoolkit.odfdom.doc.table.OdfTableRow;
 
+/**
+ * Processes all source ODS files into single RDF/XML file.
+ * 
+ * @author Josef Petrak (me@jspetrak.name)
+ */
 public class ProcessStationData {
     public static void main( String[] args ) throws Exception {
         Model model = ModelFactory.createDefaultModel();
@@ -37,9 +42,13 @@ public class ProcessStationData {
             if (row.getRowIndex() > 0) {
                 int code = Integer.valueOf(row.getCellByIndex(0).getStringValue()).intValue();
                 String name = row.getCellByIndex(1).getStringValue();
+                int type = Integer.valueOf(row.getCellByIndex(9).getStringValue()).intValue();
                 int owner = Integer.valueOf(row.getCellByIndex(17).getStringValue()).intValue();
                 
-                createStation(model, code, name, owner);
+                // Filter out non-passenger railway stations
+                if (type == 1 | type == 3 | type == 7 | type == 61 | type == 62 | type == 63 | type == 65 | type == 82) {
+                    createStation(model, code, name, owner);
+                }                
             }
         }
         
