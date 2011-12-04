@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import name.jspetrak.stationdata.vocabs.Goodrelations;
 import name.jspetrak.stationdata.vocabs.Rail;
+import name.jspetrak.stationdata.vocabs.TIO;
 import org.odftoolkit.odfdom.doc.OdfSpreadsheetDocument;
 import org.odftoolkit.odfdom.doc.table.OdfTable;
 import org.odftoolkit.odfdom.doc.table.OdfTableRow;
@@ -58,7 +59,8 @@ public class ProcessStationData {
         model.setNsPrefix("gr", Goodrelations.NS);
         model.setNsPrefix("rdfs", RDFS.getURI());
         model.setNsPrefix("rdf", RDF.getURI());
-        model.write(fos, "RDF/XML-ABBREV");
+        //model.write(fos, "RDF/XML-ABBREV");
+        model.write(fos);
     }
     
     static void createOwner(Model model, int code, String name, String abbr) {
@@ -75,6 +77,7 @@ public class ProcessStationData {
         Resource ownerResource = model.createResource("http://stationdata.example.cz/owner/"+owner);
         
         model.add(stationResource, RDF.type, Rail.STATION);
+        model.add(stationResource, RDF.type, TIO.POI);
         model.add(stationResource, Rail.MANAGEDBY, ownerResource);
         model.add(stationResource, RDFS.label, name);
     }
