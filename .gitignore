@@ -1,4 +1,5 @@
 .DS_Store
 /target/*
-nbaction.xml
+nbactions.xml
+nb-configuration.xml
 settings.xml
