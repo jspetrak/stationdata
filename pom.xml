@@ -60,7 +60,7 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.4.0</version>
 				<configuration>
-					<mainClass>name.jspetrak.stationdata.ProcessStationData</mainClass>
+					<mainClass>cz.somemove.stationdata.ProcessStationData</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
