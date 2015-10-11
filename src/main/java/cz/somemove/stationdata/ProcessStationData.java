@@ -1,25 +1,20 @@
-package name.jspetrak.stationdata;
+package cz.somemove.stationdata;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.sparql.vocabulary.FOAF;
-import com.hp.hpl.jena.vocabulary.RDF;
-import com.hp.hpl.jena.vocabulary.RDFS;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.sparql.vocabulary.FOAF;
+import org.apache.jena.vocabulary.RDF;
+import org.apache.jena.vocabulary.RDFS;
 import java.io.File;
 import java.io.FileOutputStream;
-import name.jspetrak.stationdata.vocabs.Goodrelations;
-import name.jspetrak.stationdata.vocabs.Rail;
-import name.jspetrak.stationdata.vocabs.TIO;
+import cz.somemove.stationdata.vocabs.Goodrelations;
+import cz.somemove.stationdata.vocabs.Rail;
+import cz.somemove.stationdata.vocabs.TIO;
 import org.odftoolkit.odfdom.doc.OdfSpreadsheetDocument;
 import org.odftoolkit.odfdom.doc.table.OdfTable;
 import org.odftoolkit.odfdom.doc.table.OdfTableRow;
 
-/**
- * Processes all source ODS files into single RDF/XML file.
- * 
- * @author Josef Petrak (me@jspetrak.name)
- */
 public class ProcessStationData {
     public static void main( String[] args ) throws Exception {
         Model model = ModelFactory.createDefaultModel();

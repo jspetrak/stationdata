@@ -1,13 +1,9 @@
-package name.jspetrak.stationdata.vocabs;
+package cz.somemove.stationdata.vocabs;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Resource;
 
-/**
- *
- * @author Josef Petrak (me@jspetrak.name)
- */
 public class TIO {
     public static final String NS = "http://purl.org/tio/ns#";
     

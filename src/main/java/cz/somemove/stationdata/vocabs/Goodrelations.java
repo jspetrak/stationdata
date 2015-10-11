@@ -1,7 +1,7 @@
-package name.jspetrak.stationdata.vocabs;
+package cz.somemove.stationdata.vocabs;
  
-import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.ontology.*;
  
 /**
  * Vocabulary definitions from goodrelations.owl 
