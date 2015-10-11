@@ -9,3 +9,7 @@ Alternatively use command: mvn clean package exec:java
 Output is generate into data/output.rdf.
 
 Please tweet with #stationdata hashtag.
+
+## Known issues
+
+* [ODFTOOLKIT-404](https://issues.apache.org/jira/browse/ODFTOOLKIT-404) ODF Toolkit uses HP Jena internally so we have to depend on both HP and Apache Jena distributions until fixed.
