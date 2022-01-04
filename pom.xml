@@ -34,52 +34,19 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.odftoolkit</groupId>
-			<artifactId>odfdom-java</artifactId>
-			<version>0.8.10-incubating</version>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.jena</groupId>
 			<artifactId>jena-core</artifactId>
-			<version>3.0.0</version>
+			<version>4.3.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.jena</groupId>
 			<artifactId>jena-arq</artifactId>
-			<version>3.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.hp.hpl.jena</groupId>
-			<artifactId>jena</artifactId>
-			<version>2.5.5</version>
-		</dependency>
-
-		<!-- Sesame -->
-		<dependency>
-			<groupId>org.openrdf.sesame</groupId>
-			<artifactId>sesame-runtime</artifactId>
-			<version>${version.sesame}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.openrdf.sesame</groupId>
-			<artifactId>sesame-sail-memory</artifactId>
-			<version>${version.sesame}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.openrdf.sesame</groupId>
-			<artifactId>sesame-repository-sail</artifactId>
-			<version>${version.sesame}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.openrdf.sesame</groupId>
-			<artifactId>sesame-rio-rdfxml</artifactId>
-			<version>${version.sesame}</version>
+			<version>4.3.2</version>
 		</dependency>
 	</dependencies>
 
