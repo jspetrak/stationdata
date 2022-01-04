@@ -88,9 +88,14 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.4.0</version>
+				<version>3.0.0</version>
 				<configuration>
-					<mainClass>cz.somemove.stationdata.ProcessStationData</mainClass>
+					<executable>java</executable>
+					<arguments>
+						<argument>-classpath</argument>
+						<classpath />
+						<argument>cz.somemove.stationdata.ProcessStationData</argument>
+					</arguments>
 				</configuration>
 			</plugin>
 		</plugins>
